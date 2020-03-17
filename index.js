@@ -7,7 +7,7 @@ var direction="";
 var imgMoveBool=false;
 var speed=20;
 var autoBool=false;
-var time=150;
+var time=250;
 var imageSrcList = ["left.png", "right.png", "banner01.png", "banner02.png", "banner03.png", ];
 const IMG_WIDTH=1800;
 const IMG_HEIGHT=400;
@@ -196,9 +196,32 @@ function rollAuto(){//自动轮播参数
 	if(!autoBool) return;
 	time--;
 	if(time>0) return;
-	time=150;
+	time=250;
 	direction="left";
 	position++;
 	if(position>imgList.length-1) position=0;
-	// initNextImg();
+	initNextImg();
+}
+
+
+
+// 页面返回顶部
+function scrollToTop() {
+	window.onscroll = function () {
+		if(document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+			document.getElementsByClassName("backtotop")[0].style.visibility = "visible";
+		} else {
+			document.getElementsByClassName("backtotop")[0].style.visibility = "hidden";
+		}
+	}
+	document.getElementsByClassName("backtotop")[0].addEventListener("click", clickHandler);
+	function clickHandler() {
+		clearInterval();
+		setInterval(function () {
+			document.documentElement.scrollTop-=50;
+			if(document.body.scrollTop <= 0) {
+				clearInterval();
+			}
+		}, 50) 
+	}
 }

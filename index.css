@@ -19,6 +19,12 @@ button:focus {outline: 0;}
 	align-items: center;
 	/* 父元素设置flex弹性布局，元素会横向排列 */
 	display: flex;
+	background-color: white;
+	/* 吸顶效果 */
+	position: sticky;
+	left: 0;
+	top: 0;
+	z-index: 99
 }
 .header .logo {
 	flex: 1;
@@ -81,6 +87,17 @@ button:focus {outline: 0;}
 .news {
 	height: 300px;
 	background-color: yellowgreen;
+}
+
+/* 返回顶部 */
+.backtotop {
+	position: fixed;
+	background-color: yellow;
+	height: 100px;
+	width: 100px;
+	bottom: 10px;
+	right: 10px;
+	visibility: hidden;
 }
 
 /* footer */
