@@ -216,11 +216,11 @@ function scrollToTop() {
 	}
 	document.getElementsByClassName("backtotop")[0].addEventListener("click", clickHandler);
 	function clickHandler() {
-		clearInterval();
-		setInterval(function () {
+		clearInterval(auto);
+		var auto = setInterval(function () {
 			document.documentElement.scrollTop-=50;
-			if(document.body.scrollTop <= 0) {
-				clearInterval();
+			if(document.documentElement.scrollTop <= 0) {
+				clearInterval(auto);
 			}
 		}, 50) 
 	}
