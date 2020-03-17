@@ -74,34 +74,8 @@ button:focus {outline: 0;}
 	overflow: hidden;
 	position: relative;
 }
-.banner .banner-image {
-	font-size: 0;
-	width: 5400px;
-	text-align: center;
-	position: absolute;
-	left: -250px;
-}
-.banner .banner-image img {
-	/* 超出页面宽度的单张图片居中 */
-	/* margin: 0 -100%; */
-}
-.banner ul {
-	position: absolute;
-	left: 615px;
-	bottom: 10px;
-}
-.banner ul li {
-	background-color: rgba(225, 225, 225, 0);
-	border: 1px solid red;
-	border-radius: 8px;
-	width: 16px;
-	height: 16px;
-	float: left;
-	margin-right: 8px;
-}
-.banner ul li:nth-of-type(3) {
-	margin: 0;
-}
+/* 超出页面宽度的单张图片居中 */
+/* 	margin: 0 -100%;
 
 /* news */
 .news {

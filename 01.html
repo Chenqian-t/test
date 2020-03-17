@@ -30,16 +30,8 @@
 				</div>
 			</div>
 			<div class="banner">
-				<div class="banner-image">
-					<img src="./imgs/banner01.png" />
-					<img src="./imgs/banner02.png" />
-					<img src="./imgs/banner03.png" />
-				</div>
-				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
+				<!-- <div class="banner-image">
+				</div> -->
 			</div>
 			<div class="news">
 				3
@@ -56,11 +48,7 @@
 			function mouseout() {
 				document.getElementsByClassName("QF-card")[0].style.visibility = "hidden";
 			}
-			this.$c("div", {
-				width: "100px",
-				height: "100px",
-				backgroundColor: "red",
-			}, document.getElementsByClassName("banner")[0])
+			this.init();
 		</script>
 	</body>
 </html>
