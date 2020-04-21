@@ -7,10 +7,10 @@ a {color: black; text-decoration: none;}
 a:hover {text-decoration: underline;}
 
 /* 样式 */
-#nav, #banner, #content, #footer, #bottom {display: block; width: 100%;}
+nav, banner, content, footer, bottom {display: block; width: 100%;}
 
 /* nav */
-#nav {height: 110px; background-color: rgb(230, 219, 219);}
+nav {height: 110px; background-color: rgb(230, 219, 219);}
 #nav-lists {padding: 0 140px; height: 70px; background-color: rgb(36, 36, 36); display: flex; align-items: center;}
 #logo {width: 180px; height: 70px; background-image: url(../imgs/topbar.png); background-position: 0 0;}
 #nav-lists ul {display: flex; align-items: center; color: rgb(204, 204, 204); font-size: 14px; padding-right: 90px;}
@@ -28,7 +28,7 @@ a:hover {text-decoration: underline;}
 #nav-items li:hover {border-radius: 20px; background-color: rgba(53, 51, 51, 0.4);}
 
 /* banner */
-#banner {background-color: rgb(207, 207, 207);}
+banner {background-color: rgb(207, 207, 207);}
 #ban {height: 284px; width: 984px; margin: 0 auto; background-color: rgb(194, 12, 12); position: relative;}
 #left-btn, #right-btn {width: 40px; height: 80px; position: absolute; background-image: url(../imgs/btn.png);}
 #left-btn {left: -55px; top: 102px; background-position: 5px -215px;}
@@ -39,7 +39,7 @@ a:hover {text-decoration: underline;}
 #download {width: 254px; height: 284px; background-image: url(../imgs/download.png);}
 
 /* content */
-#content {height: 1050px; background-color: rgb(245, 245, 245)}
+content {height: 1050px; background-color: rgb(245, 245, 245)}
 #main {width: 984px; margin: 0 auto;}
 #left, #right {height: 1050px; float: left; border-left: 1px solid rgb(212, 212, 212); background-color: rgb(255, 255, 255)}
 #left {width: 729px;}
@@ -61,8 +61,8 @@ a:hover {text-decoration: underline;}
 #right {width: 252px; border-right: 1px solid rgb(212, 212, 212);}
 
 /* footer */
-#footer {height: 200px; background-color: rgb(245, 245, 245); border-top: 1px solid rgb(212, 212, 212);}
+footer {height: 200px; background-color: rgb(245, 245, 245); border-top: 1px solid rgb(212, 212, 212);}
 
 /* bottom */
-#bottom {background-color: rgba(24, 24, 24, 0.9); height: 50px; position: fixed; bottom: 0;}
-#bottom div {width: 984px; margin: 0 auto;}
+bottom {background-color: rgba(24, 24, 24, 0.9); height: 50px; position: fixed; bottom: 0;}
+bottom div {width: 984px; margin: 0 auto;}
